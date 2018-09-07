@@ -1,0 +1,11 @@
+applications:
+  - name: yashulsapp
+    environment_json: {}
+    buildpack: https://github.com/cloudfoundry/php-buildpack
+    memory: 128M
+    instances: 1
+    disk_quota: 1024M
+    services: []
+    env:
+    CF_STAGING_TIMEOUT: 15
+    CF_STARTUP_TIMEOUT: 15
